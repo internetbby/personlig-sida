@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(https://66.media.tumblr.com/f1928714a2ad09c927aee023f7bbf361/tumblr_ou8v1vm1Xz1wttomso1_500.png);
+  background-image: url("bilder/background-img.png");
   background-color: red;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
