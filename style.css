@@ -2,3 +2,38 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-image: url(https://66.media.tumblr.com/f1928714a2ad09c927aee023f7bbf361/tumblr_ou8v1vm1Xz1wttomso1_500.png);
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2fr, [body] 5fr, [footer]2fr;
+
+  gap: 1em;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  color: white;
+  padding: 1rem;
+}
+
+main {
+  background-color: rgba(225, 255, 255, 0.8);
+
+  grid-row-start: body;
+  grid-row-end: footer;
+  grid-column: 2 / span 3;
+
+  border-radius: 1vmin;
+}
+
+footer {
+  background-color: cyan;
+  grid-column: 1 / span 5;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
