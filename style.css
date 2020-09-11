@@ -21,6 +21,37 @@ header {
   padding: 1rem;
 }
 
+nav {
+  margin-top: 10%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 7vh;
+
+  grid-row: 1 / span 1;
+  grid-column: 4 / span 2;
+
+  gap: 30px;
+}
+
+li {
+}
+
+a {
+  background-color: darkred;
+  color: lightcoral;
+  text-decoration: none;
+
+  font-size: 2rem;
+}
+
+a:hover {
+  color: lightcoral;
+}
+
+a:active {
+  color: lightyellow;
+}
 main {
   background-color: rgba(225, 255, 255, 0.8);
 
