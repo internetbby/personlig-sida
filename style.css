@@ -23,6 +23,7 @@ header {
 
 nav {
   margin-top: 10%;
+  margin-right: 1vh;
   display: inline-flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -38,6 +39,10 @@ li {
 }
 
 a {
+  border-radius: 10px;
+  border-style: none none solid none;
+  padding: 1vh;
+  border-color: red;
   background-color: darkred;
   color: lightcoral;
   text-decoration: none;
@@ -47,9 +52,12 @@ a {
 
 a:hover {
   color: lightcoral;
+ 
+
 }
 
 a:active {
+  border-style: hidden;
   color: lightyellow;
 }
 main {
