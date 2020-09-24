@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: [paddingarea]1fr [textarea] 4fr [imagearea]2fr [paddingarea2]1fr;
+    grid-template-rows: [paddingarea]1fr [textarea] 3fr [videoarea]2fr [paddingarea2] 1fr;
+}
+
+main{
+    grid-column: textarea / imagearea;
+    grid-row: textarea / paddingarea2;
+    background-color: white;
+
+    border-radius: 10px;
+}
+
