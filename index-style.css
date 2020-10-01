@@ -1,78 +1,100 @@
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  background-image: url("bilder/background-img.png");
-  background-color: red;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 2fr, [body] 5fr, [footer]2fr;
+  background-color: white;
 
-  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 
   width: 100vw;
   height: 100vh;
 }
 
-header {
-  color: white;
-  padding: 1rem;
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 }
 
-nav {
-  margin-top: 10%;
-  margin-right: 1vh;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 7vh;
-
-  grid-row: 1 / span 1;
-  grid-column: 4 / span 2;
-
-  gap: 30px;
+.stretch {
+  width: 100%;
+  height: 100%;
 }
 
-li {
-}
-
-a {
-  border-radius: 10px;
-  border-style: none none solid none;
-  padding: 1vh;
-  border-color: red;
-  background-color: darkred;
-  color: lightcoral;
-  text-decoration: none;
-
-  font-size: 2rem;
-}
-
-a:hover {
-  color: lightcoral;
-}
-
-a:active {
-  border-style: hidden;
-  color: lightyellow;
-}
 main {
-  background-color: rgba(225, 255, 255, 0.8);
-
-  grid-row-start: body;
-  grid-row-end: footer;
-  grid-column: 2 / span 3;
-
-  border-radius: 1vmin;
+  grid-area: 2 / 2 / 6 /6;
+  background-color: white;
 }
 
-footer {
-  background-color: cyan;
-  grid-column: 1 / span 5;
-  grid-row-start: 8;
-  grid-row-end: 9;
+.imagebox {
+  background-size: auto, 100%;
+  background-repeat: cover;
+  background-position: center;
 }
 
+.imagebox:hover {
+  opacity: 0.5;
+}
 
+.textarea {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+
+  
+
+  font-size: 4em;
+  text-transform: uppercase;
+  color: white;
+
+  text-shadow:
+  3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.imagebox:hover .textarea {
+  opacity: 1;
+  text-align: center;
+  padding: 20%;
+}
+
+#firstbox {
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+  background-image: url(bilder/suicideboys.jpg);
+  background-size: 100%;
+}
+
+#secondbox {
+  grid-row: 2/ 4;
+  grid-column: 4/6;
+  background-image: url("bilder/lilpeep.jpg");
+}
+
+#thirdbox {
+  background-image: url("bilder/sybyr.jpg");
+
+  background-size: 100% 100%;
+
+  grid-row: 4/6;
+  grid-column: 4/6;
+}
+
+#fourthbox {
+  background-image: url("bilder/crywank.jpg");
+  background-size: 100% 100%;
+  grid-row: 4/6;
+  grid-column: 2/4;
+}
